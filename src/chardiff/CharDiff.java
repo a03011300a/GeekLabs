@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package chardiff;
-
+import java.util.*;
 /**
  *
  * @author Kornel
@@ -39,8 +39,14 @@ public int Count(String str1,String str2){
 
     public static void main(String[] args) {
         // TODO code application logic here
-   CharDiff chardiff1 = new CharDiff();
-   chardiff1.Count("POLSKA","ABCDEF");
+   Scanner scan = new Scanner(System.in);
+   System.out.println("Podaj pierwszy wyraz:");
+    String str1 = scan.nextLine();
+    System.out.println("Podaj drugi wyraz:");
+    String str2 = scan.nextLine();
+    CharDiff chardiff1 = new CharDiff();
+   System.out.println("Liczba różniących się liter:");
+    chardiff1.Count(str1,str2);
    
     }
     
