@@ -18,13 +18,12 @@ public int Count(String str1,String str2){
    {
         for (n=0; n<str1.length(); n++)
         {
-            if(str1.length()==str2.length())
-            {
+            
     if (str1.charAt(n)!=str2.charAt(n))
     {
             x++;
     }
-            }}
+            }
                 System.out.println(x);
                 return x;
         }   
@@ -32,8 +31,9 @@ public int Count(String str1,String str2){
    else
    {
        System.out.println("Różne długości wyrazów.");
+	   return x;
    }
-   return x;
+   
 }
 
 
